@@ -1,0 +1,154 @@
+/* pages/newsDetail/newsDetail.wxss */
+/* pages/newDetail/newDetail.wxss */
+
+#newsDetail {
+  padding-top: 10px;
+}
+#newsDetail .news-img{
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+}
+#newsDetail .news-img image {
+  width: 100%;
+}
+#newsDetail .news-info {
+  padding: 3px 5px;
+}
+
+#newsDetail .news-info .news-title {
+  display: block;
+  margin: 10px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+#newsDetail .news-info .vcnum {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+#newsDetail .news-info .vcnum .color {
+  display: inline-block;
+  color: #FFB31A;
+  font-size: 20px;
+}
+
+#newsDetail .news-info .author {
+  margin-top: 12px;
+  position: relative;
+}
+#newsDetail .news-info .aut_img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+#newsDetail .news-info .aut_name {
+  position: absolute;
+  font-size: 12px;
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+#newsDetail .news-info .desc {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+#newsDetail .news-info .materials {
+  position: relative;
+  margin: 15px 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#newsDetail .news-info .table{
+  position: relative;
+  margin-top: 10px;
+  border:1px solid #dadada;
+}
+#newsDetail .news-info .tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  font-size: 13px;
+  align-items: center;
+  background-color: #F1F7FA;
+}
+#newsDetail .news-info .td {
+  width:50%;
+  height: 38px;
+  padding-top: 10px;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+}
+
+#newsDetail .news-info .step {
+  position: relative;
+  margin-top: 10px;
+}
+
+#newsDetail .news-info .step-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#newsDetail .news-info .step-info {
+  margin-top: 5px;
+}
+
+#newsDetail .news-info .step-desc {
+  margin: 5px 0;
+}
+
+#newsDetail .news-info .title-num {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#newsDetail .news-info .desc_num {
+  font-size: 14px;
+}
+
+#newsDetail .news-info .step_img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+#newsDetail .news-info .skill {
+  margin: 10px 0 8px;
+  position: relative;
+}
+
+#newsDetail .news-info .skill .skill-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#newsDetail .news-info .skill .skill-content {
+  font-size: 14px;
+}
+
+#newsDetail .news-info .classify {
+  position: relative;
+  margin: 10px 0;
+  height: 40px;
+  line-height: 40px;
+}
+
+#newsDetail .news-info .classify .classify-title {
+  font-size: 14px;
+  color: #706d6d;
+}
+
+#newsDetail .news-info .classify .type {
+  padding: 2px 5px;
+  border: 1px solid #706d6d;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #706d6d;
+  background-color: #fff;
+}

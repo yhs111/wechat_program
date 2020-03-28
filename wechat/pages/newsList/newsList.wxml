@@ -1,0 +1,30 @@
+<!--pages/newsList/newsList.wxml-->
+
+<view id="newListPage">
+
+  <view class="header">
+    <input type="text" id="search" placeholder="搜索" value="{{search_string}}" bindconfirm="enter"></input>
+  </view>
+  <view class="top-bar">
+    <view wx:if="{{!search_string}}">
+      <block wx:for="{{barList}}" wx:key="*this">
+        <text class="{{barIndex==index?'checked':''}}" bindtap="clickBar" data-index="{{index}}">{{item}}</text>
+      </block>
+    </view>
+    <view wx:else>
+      <text>{{search_string}}:</text>
+    </view>
+  </view>
+  <view class="news-list">
+    <view class="new-item" wx:for="{{newsList}}" wx:key="id" bindtap="goDetail" data-nid="{{item.nid}}">
+        <view class="item-img">
+          <image src="{{item.img_url}}" />
+        </view>
+        <view class="item-content">
+          <text class="title" decode>{{item.title}}\n</text>
+          <text class="desc" decode>{{item.desc}}\n</text>
+          <text class="author">{{item.aut_name}}</text>
+        </view>
+    </view>
+  </view>
+</view>

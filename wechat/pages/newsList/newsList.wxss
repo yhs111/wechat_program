@@ -1,0 +1,100 @@
+/* pages/newsList/newsList.wxss */
+/* pages/newList/newList.wxss */
+
+#newListPage .header {
+  height: 40px;
+  width: 100%;
+  background-color: crimson;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+#newListPage .header #search {
+  background-color: #fff;
+  width: 80%;
+  height: 26px;
+  margin: auto;
+  margin-top: 7px;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 0 6px;
+}
+
+#newListPage .top-bar {
+  width: 100%;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  z-index: 5;
+}
+
+#newListPage .top-bar view {
+  display: flex;
+  width: 100%;
+  overflow-y: scroll;
+  white-space: nowrap; 
+}
+
+#newListPage .top-bar text {
+  margin-left: 14px;
+  font-size: 13px;
+  height: 36px;
+  line-height: 36px; 
+}
+#newListPage .top-bar text.checked{
+  color:crimson;
+}
+#newListPage .news-list {
+  margin-top: 80px;
+}
+
+#newListPage .news-list {
+  
+}
+
+#newListPage .news-list .new-item {
+  position: relative;
+  padding: 10px;
+  border-bottom: 6px solid #f0f0f0;
+  margin-bottom: 10px;
+}
+
+#newListPage .news-list .new-item .item-img image {
+  width: 32%;
+  height: 100px;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+
+#newListPage .news-list .new-item .item-content {
+  position: absolute;
+  width: 65%;
+  height: 100%;
+  right: 0;
+  top: 10px;
+}
+
+#newListPage .news-list .new-item .item-content .title {
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#newListPage .news-list .new-item .item-content .desc {
+  color: #444;
+  font-size: 12px;
+}
+
+#newListPage .news-list .new-item .item-content .author {
+  position: absolute;
+  margin-top: 2px;
+  color: #333;
+  font-size: 13px;
+}
+
+

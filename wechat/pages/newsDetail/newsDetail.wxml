@@ -1,0 +1,52 @@
+<!--pages/newsDetail/newsDetail.wxml-->
+<!--pages/newDetail/newDetail.wxml-->
+<view id="newsDetail">
+  <view class="news-img">
+    <image src="{{news.img_url}}"></image>
+  </view>
+  <view class="news-info">
+    <text class="news-title">{{news.title}}</text>
+    <view class="vcnum">
+      <text class="color">{{news.read_num}}</text>
+        浏览
+      <text class="color" decode>&nbsp;&nbsp;&nbsp;{{news.col_num}}</text>
+        收藏
+    </view>
+    <view class="author">
+      <view>
+        <image src="{{news.aut_img}}" class="aut_img"></image>
+        <text class="aut_name">{{news.aut_name}}</text>
+      </view>
+      <text class="desc">{{news.aut_desc}}</text>
+    </view>
+    <view class="materials">
+      <view style="font-size: 20px;">配料</view>
+      <view class="table">
+        <view class="tr" wx:for="{{news.materials}}" wx:key="key">
+          <view class="td">{{item.key}}</view>
+          <view class="td">{{item.value}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="step">
+      <text class="step-title">做法</text>
+      <view class="step-info">
+        <view wx:for="{{news.step}}" wx:for-index="{{index}}" wx:key="*this">
+          <view class="step-desc">
+            <text class="title-num" decode>步骤{{item.index}}\n</text>
+            <text class="desc_num">{{item.desc}}</text>
+          </view>
+          <image src="{{item.url}}" class="step_img"></image>
+        </view>
+      </view>
+    </view>
+    <view class="skill">
+      <text class="skill-title" decode>烹饪技巧\n</text>
+      <text class="skill-content">{{news.tips}}</text>
+    </view>
+    <view class="classify">
+      <text decode class="classify-title">分类:&nbsp;&nbsp;</text>
+      <text class="type" bindtap="clickType" data-name="{{news.classify}}">{{news.classify}}</text>
+    </view>
+  </view>
+</view>

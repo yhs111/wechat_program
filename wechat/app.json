@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/newsList/newsList",
+    "pages/newsDetail/newsDetail",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "热门菜谱",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
