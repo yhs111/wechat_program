@@ -10,7 +10,7 @@
 
 (1) 下载 python 第三方库
 ```bash
-python requirements.txt
+pip install -r requirements.txt -i https://pypi.douban.com/simple
 ```
 (2) 下载微信开发者工具(https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)
 
